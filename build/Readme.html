@@ -6,7 +6,7 @@
 <body>
 
  <h1>Force.com Migration Tool</h1>
-    <p>This is the Summer '17  version of the Force.com Migration Tool. The Force.com Migration Tool is a Java/Ant-based command-line utility for moving metadata between a local directory and
+    <p>This is the Spring '17 version of the Force.com Migration Tool. The Force.com Migration Tool is a Java/Ant-based command-line utility for moving metadata between a local directory and
         a Salesforce organization. For more information, see the <a href="http://wiki.developerforce.com/page/Migration_Tool_Guide#Official_Documentation">Force.com Migration Tool Guide</a>.</p>
 
 <h2>Installation</h2>
@@ -23,12 +23,9 @@
      HTTP proxy, follow the instructions in <a
      href="http://ant.apache.org/manual/proxy.html">Proxy Configuration</a>. </li>
 </ol>
-    <u>Note</u>: The Force.com Migration Tool uses the <code>ant-salesforce.jar</code> file that’s in the distribution ZIP file.
-    If you installed a previous version of the tool and copied <code>ant-salesforce.jar</code> to the Ant <code>lib</code> directory, delete the <code>jar</code> file belonging to the previous version.
-    The <code>lib</code> directory is located in the root folder of your Ant installation. You don’t need to copy the <code>jar</code> file belonging to the new version of the tool to the Ant <code>lib</code> directory. 
- 
-    <p>If you plan to run the tool from a directory other than its installation directory, modify the <code>build.xml</code> file to indicate the location of the <code>ant-salesforce.jar</code> 
-       file. Update the location attribute on &lt;pathelement&gt; in <code>build.xml</code> to point to <code>ant-salesforce.jar</code> in the installation directory.</p>
+    <u>Note</u>: The Force.com Migration Tool uses the <code>ant-salesforce.jar</code> file that's in the distribution zip. 
+    If you have another version of <code>ant-salesforce.jar</code> in the Ant installation <code>lib</code> directory, delete it to ensure that the latest version from the zip file is used. 
+    You don't need to copy this jar file to your Ant installation <code>lib</code> directory.
 
 <h2>Deploying Sample Metadata</h2>
 
@@ -276,7 +273,7 @@ the packages to retrieve. </dd>
 
 <dt><b>apiVersion</b></dt>
 
-<dd>Optional. Defaults to 40.0. The API version to use for the retrieved metadata files.</dd>
+<dd>Optional. Defaults to 39.0. The API version to use for the retrieved metadata files.</dd>
 
 <dt><b>pollWaitMillis</b></dt>
 
@@ -355,7 +352,7 @@ be the name of the folder from which the contents are retrieved. </dd>
 
 <dt><b>apiVersion</b></dt>
 
-<dd>Optional. Defaults to 40.0. The API version to use for the retrieved metadata files.</dd>
+<dd>Optional. Defaults to 39.0. The API version to use for the retrieved metadata files.</dd>
 
 <dt><b>maxPoll</b></dt>
 
@@ -454,7 +451,7 @@ This is useful for working against a sandbox instance on test.salesforce.com. </
 
 <dt><b>apiVersion</b></dt>
 
-<dd>Optional. Defaults to 40.0. Returns information about the metadata components available in the API version specified.</dd>
+<dd>Optional. Defaults to 39.0. Returns information about the metadata components available in the API version specified.</dd>
 
 <dt><b>resultFilePath</b></dt>
 
@@ -493,7 +490,7 @@ paste the 25-digit token value to the end of your password.</dd>
 This is useful for working against a sandbox instance on test.salesforce.com. </dd>
 
 <dt><b>apiVersion</b></dt>
-<dd>Optional. Defaults to 40.0. Describes only the metadata components available in the API version specified.</dd>
+<dd>Optional. Defaults to 39.0. Describes only the metadata components available in the API version specified.</dd>
 
 <dt><b>resultFilePath</b></dt>
 
