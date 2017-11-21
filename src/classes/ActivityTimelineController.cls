@@ -19,7 +19,7 @@ public class ActivityTimelineController {
         List<Task> searchResult = new List<Task>();
         searchResult = [SELECT Id, AccountId, ActivityDate, Subject FROM Task WHERE WhatId=:recordId];
         System.debug('hello world');
-        System.debug('hello world3');
+        System.debug('hello world4');
         return searchResult;
     }
 
