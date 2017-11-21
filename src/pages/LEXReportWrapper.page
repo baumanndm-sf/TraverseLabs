@@ -1,0 +1,6 @@
+<apex:page >
+    Foo Bar
+  	<apex:outputPanel id="MissingAttRpt" >
+		<apex:iframe src="https://traverselabs-dev-ed.lightning.force.com/one/one.app#/sObject/00O610000046abaEAA/view" scrolling="true"  height="1588px"  width="100%"/>   
+	</apex:outputPanel>
+</apex:page>

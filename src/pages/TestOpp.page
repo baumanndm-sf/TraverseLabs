@@ -1,0 +1,20 @@
+<apex:page standardController="Opportunity" recordSetVar="opportunities">
+    <apex:includeScript value="/support/console/40.0/integration.js"/>
+    <apex:includeLightning />
+    <div id="quickAdd" />
+
+    <script>
+    $Lightning.use("c:lcvfTest", function() {
+         $Lightning.createComponent("c:Quick_Opportunity_Add",
+          { label : "Press Me!" },
+          "quickAdd",
+          function(cmp) {
+            // do some stuff
+          });
+        });
+    //function testSetTabTitle() {
+            //Set the current tab's title
+            sforce.console.setTabTitle('Case Emails');
+    //};
+    </script>
+</apex:page>
